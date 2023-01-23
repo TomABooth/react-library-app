@@ -9,9 +9,9 @@ function App() {
   return (
     <main className="container">
       <Switch>
+        <Route exact path="/book/:id" component={BookDetail} />
+        <Route exact path="/books" component={BookList} />
         <Route exact path="/" component={Home} />
-        <Route path="/books" component={BookList} />
-        <Route path="/book/:id" component={BookDetail} />
       </Switch>
     </main>
   );
